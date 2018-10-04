@@ -17,7 +17,7 @@
         <!--<spring.version>4.3.8.RELEASE</spring.version>-->
         <!--<spring-boot.version>1.5.7.RELEASE</spring-boot.version>-->
         <!--<spring.version>5.0.4.RELEASE</spring.version>-->
-        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
         <easy-rules.version>3.2.0</easy-rules.version>
         <resource.delimiter>@</resource.delimiter> <!-- delimiter that doesn't clash with Spring ${} placeholders -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
