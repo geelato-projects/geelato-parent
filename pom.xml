@@ -13,9 +13,11 @@
 
     <properties>
         <geelato.version>1.0.2.SNAPSHOT</geelato.version>
-        <java.version>1.8</java.version>
-        <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
+        <java.version>19</java.version>
+        <springframework.version>6.0.0</springframework.version>
+        <spring-boot.version>3.0.0</spring-boot.version>
         <easy-rules.version>3.2.0</easy-rules.version>
+        <fastjson2-version>2.0.19</fastjson2-version>
         <resource.delimiter>@</resource.delimiter> <!-- delimiter that doesn't clash with Spring ${} placeholders -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -23,12 +25,19 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <slf4j.version>1.7.22</slf4j.version>
-        <wagon-ssh.version>2.8</wagon-ssh.version>
-        <j2cache-version>2.7.6-release</j2cache-version>
+        <slf4j.version>2.0.5</slf4j.version>
+        <wagon-ssh.version>3.5.2</wagon-ssh.version>
+        <j2cache-version>2.8.5-release</j2cache-version>
+        <!--j2cache2.8.5,使用的是redis.clients.version2.9.0的版本，和新版的springboot有冲突-->
+        <redis.clients.version>2.9.0</redis.clients.version>
         <ehcache-version>3.3.0</ehcache-version>
-        <fst-version>2.57</fst-version>
-        <commons-beanutils-version>1.9.3</commons-beanutils-version>
+        <fst-version>3.0.3</fst-version>
+        <commons-beanutils-version>1.9.4</commons-beanutils-version>
+        <java-jwt.version>4.2.1</java-jwt.version>
+        <shiro.version>1.10.1</shiro.version>
+        <commons-codec.version>1.15</commons-codec.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
         <arguments />
     </properties>
