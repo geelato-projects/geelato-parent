@@ -38,6 +38,8 @@
         <commons-codec.version>1.15</commons-codec.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+        <apache.poi.version>5.2.3</apache.poi.version>
+        <dingtalk.sdk.version>1.5.10</dingtalk.sdk.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
         <arguments />
     </properties>
