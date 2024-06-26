@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0.2-SNAPSHOT</version>
     <description>geelato parent project</description>
-    <url>https://www.geelato.org/</url>
+    <url>https://www.geelato.cn/</url>
 
     <properties>
         <geelato.version>1.0.2.SNAPSHOT</geelato.version>
