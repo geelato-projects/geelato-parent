@@ -12,12 +12,15 @@
     <url>https://www.geelato.cn/</url>
 
     <properties>
-        <geelato.version>1.0.2.SNAPSHOT</geelato.version>
+        <geelato.version>1.0.2-SNAPSHOT</geelato.version>
+        <geelato-components.version>0.0.1-SNAPSHOT</geelato-components.version>
         <java.version>17</java.version>
         <springframework.version>6.0.0</springframework.version>
         <spring-boot.version>3.0.0</spring-boot.version>
+        <lomok.version>1.18.28</lomok.version>
         <easy-rules.version>3.2.0</easy-rules.version>
-        <fastjson2-version>2.0.19</fastjson2-version>
+        <fastjson2.version>2.0.19</fastjson2.version>
+        <jackson.version>2.14.1</jackson.version>
         <resource.delimiter>@</resource.delimiter> <!-- delimiter that doesn't clash with Spring ${} placeholders -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -63,4 +66,8 @@
         <developerConnection>scm:git:https://github.com/geelato-projects/geelato-core.git</developerConnection>
         <url>git:https://github.com/geelato-projects/geelato-core.git</url>
     </scm>
+
+    <dependencyManagement>
+
+    </dependencyManagement>
 </project>
