@@ -68,6 +68,64 @@
     </scm>
 
     <dependencyManagement>
-
+        <dependencies>
+            <!--external-->
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+            <!--project-->
+            <dependency>
+                <groupId>org.geelato</groupId>
+                <artifactId>geelato-lang</artifactId>
+                <version>${geelato.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.geelato</groupId>
+                <artifactId>geelato-core</artifactId>
+                <version>${geelato.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.geelato</groupId>
+                <artifactId>geelato-utils</artifactId>
+                <version>${geelato.version}</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
+    </dependencies>
 </project>
