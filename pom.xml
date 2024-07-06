@@ -71,6 +71,14 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--spring dependency-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!--external-->
             <dependency>
                 <groupId>commons-beanutils</groupId>
@@ -118,6 +126,17 @@
                 <groupId>org.geelato</groupId>
                 <artifactId>geelato-utils</artifactId>
                 <version>${geelato.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.geelato</groupId>
+                <artifactId>geelato-web-platform</artifactId>
+                <version>${geelato.version}</version>
+            </dependency>
+            <!--project components-->
+            <dependency>
+                <groupId>cn.geelato</groupId>
+                <artifactId>logging-component</artifactId>
+                <version>${geelato-components.version}</version>
             </dependency>
             <!--unit test-->
             <dependency>
