@@ -113,7 +113,7 @@
             </dependency>
             <!--project-->
             <dependency>
-                <groupId>org.geelato</groupId>
+                <groupId>cn.geelato</groupId>
                 <artifactId>geelato-lang</artifactId>
                 <version>${geelato.version}</version>
             </dependency>
@@ -171,4 +171,30 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
+
+
+    <!--download dependency-->
+    <repositories>
+        <repository>
+            <id>2367868-snapshot-hDbqny</id>
+            <url>https://packages.aliyun.com/maven/repository/2367868-snapshot-hDbqny</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <!--push package-->
+    <profiles>
+        <profile>
+            <id>rdc</id>
+            <properties>
+                <altReleaseDeploymentRepository>
+                    2367868-snapshot-hDbqny::default::https://packages.aliyun.com/maven/repository/2367868-snapshot-hDbqny
+                </altReleaseDeploymentRepository>
+            </properties>
+        </profile>
+    </profiles>
 </project>
