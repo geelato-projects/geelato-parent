@@ -79,6 +79,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--base logging dependency-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
             <!--external-->
             <dependency>
                 <groupId>commons-beanutils</groupId>
@@ -135,7 +141,7 @@
             <!--project components-->
             <dependency>
                 <groupId>cn.geelato</groupId>
-                <artifactId>logging-component</artifactId>
+                <artifactId>logging-plugin</artifactId>
                 <version>${geelato-components.version}</version>
             </dependency>
             <!--unit test-->
@@ -145,6 +151,7 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -170,31 +177,25 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
     </dependencies>
 
 
-    <!--download dependency-->
-    <repositories>
-        <repository>
-            <id>2367868-snapshot-hDbqny</id>
-            <url>https://packages.aliyun.com/maven/repository/2367868-snapshot-hDbqny</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <!--push package-->
-    <profiles>
-        <profile>
-            <id>rdc</id>
-            <properties>
-                <altReleaseDeploymentRepository>
-                    2367868-snapshot-hDbqny::default::https://packages.aliyun.com/maven/repository/2367868-snapshot-hDbqny
-                </altReleaseDeploymentRepository>
-            </properties>
-        </profile>
-    </profiles>
+<!--    &lt;!&ndash;download dependency&ndash;&gt;-->
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>2367868-snapshot-hDbqny</id>-->
+<!--            <url>https://packages.aliyun.com/maven/repository/2367868-snapshot-hDbqny</url>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 </project>
